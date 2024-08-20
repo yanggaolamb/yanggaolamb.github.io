@@ -1,0 +1,66 @@
+.navbar-container {
+    width: 100%;
+}
+.navbar-nav {
+    margin: 0 auto;
+    font-size: 17px; 
+    font-style: italic;
+}
+
+body {
+    font-family: Optima, Candara, Calibri, Arial, sans-serif;
+    /* for IE */
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-width: 960px;
+}
+
+#inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* This ensures equal height */
+    gap: 20px;
+}
+
+.profilePicture {
+    flex: 0 0 230px;
+    max-width: 100%;
+    display: flex;
+    align-items: center; /* Center image vertically */
+}
+
+.profilePicture img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* This centers the content vertically */
+}
+
+/* Additional styling for the hr element */
+hr {
+    width: 100%; /* Ensures the hr takes the full width of the container */
+    border: 0.5px solid #ccc; /* Adds a border to make the hr visible */
+    margin: 0 0; /* Adds some space above and below the hr */
+}
+
+@media (max-width: 768px) {
+    #inner {
+        flex-direction: column;
+    }
+    .profilePicture {
+        margin: 0 auto;
+    }
+}
